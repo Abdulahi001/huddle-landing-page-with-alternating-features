@@ -1,0 +1,551 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Big+Shoulders+Display:wght@700&family=Exo+2&family=Fraunces:opsz,wght@9..144,700&family=Hanken+Grotesk:wght@500;700;800&family=Inter:wght@400;700&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@400;500;700&family=Lexend+Deca&family=Montserrat:wght@700&family=Open+Sans:ital@1&family=Outfit:wght@400;700&family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Big+Shoulders+Display:wght@700&family=Exo+2&family=Fraunces:opsz,wght@9..144,700&family=Hanken+Grotesk:wght@500;700;800&family=Inter:wght@400;700&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@400;500;700&family=Lexend+Deca&family=Montserrat:wght@700&family=Open+Sans:ital,wght@0,500;1,700&family=Outfit:wght@400;700&display=swap');
+
+
+/* 
+## Colors
+
+### Primary
+
+- Pink: hsl(322, 100%, 66%)
+
+### Neutral
+
+- Very Pale Cyan: hsl(193, 100%, 96%)
+- Very Dark Cyan: hsl(192, 100%, 9%)
+- Grayish Blue: hsl(208, 11%, 55%)
+font-family: 'Open Sans', sans-serif;
+ */
+
+ :root{
+    --pink: hsl(322, 100%, 66%);
+    --very-pale-cyan:hsl(193, 100%, 96%);
+    --very-dark-cyan:hsl(192, 100%, 9%);
+    --grayish-blue: hsl(208, 11%, 55%);
+
+ }
+
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+
+ body{
+    
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+
+ }
+
+ body header{
+    height: 90vh;
+    background: url(images/bg-hero-desktop.svg);
+    background-color: var(--very-pale-cyan);
+ }
+
+ body header nav{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    padding: 40px 0;
+ }
+ body header nav img{
+    width: 170px;
+    
+ }
+
+ body header nav button{
+    padding: 13px 50px;
+    border: none;
+    border-radius: 20px;
+    background-color:white;
+    color: var(--very-dark-cyan);
+    font-family: 'Open Sans', sans-serif;
+    box-shadow:0 0 15px 0 rgba(0, 0, 0, 0.11);
+ }
+ body header .container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+ }
+ body header .container picture {
+    width:580px;
+  
+ }
+ body header .container picture img{
+    width: 100%;
+ }
+ body header .container .content{
+    width: 490px;
+ }
+ body header .container .content h1{
+    font-size: 39px;
+    margin-bottom: 20px;
+    color:var(--very-dark-cyan) ;
+    font-weight: 600;
+    
+ }
+ body header .container .content p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--very-dark-cyan);
+    margin-bottom: 20px;
+ }
+ body .btns:hover{
+    opacity: 0.8;
+    cursor: pointer;
+ }
+ body .btn{
+    background-color: var(--pink);
+    color: white;
+ }
+ body header .container .content button{
+    padding:18px 0  ;
+    width: 250px;
+    font-size: 12px;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+ }
+
+ body main {
+    height: 190vh;
+    margin: 100px 0;
+    position: relative;
+    margin-bottom: 200px;
+   
+ 
+ }
+ body main .sections{
+    width: 90%;
+    margin: auto;
+   
+   
+ }
+ body main .sections .sect{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow:0 0 15px 0 rgba(0, 0, 0, 0.11);
+    margin: 30px;
+    border-radius: 10px;
+    padding: 30px 20px;
+
+ }
+ body main .sections .sect .cont {
+    width: 400px;
+    margin-left: 50px;
+    
+ }
+ body main .sections .sect .cont h2{
+    color: var(--very-dark-cyan);
+    margin-bottom: 15px;
+ }
+ body main .sections .sect .cont p{
+    font-size: 15px;
+    color: var(--grayish-blue);
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 24px;
+ }
+ body main .sections .sect picture{
+    width: 400px;
+ }
+ body main .sections .sect picture img{
+    width: 100%;
+ }
+
+
+ body footer{
+    position: relative;
+    z-index: 1;
+    height: 75vh;
+    background-color: var(--very-dark-cyan);
+ }
+ body footer .section-4{
+    z-index: 2;
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   background-color: white;
+    width: 640px;
+    height: 230px;
+    padding: 20px;
+    box-shadow:0 0 15px 0 rgba(0, 0, 0, 0.11);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+ }
+ body footer .section-4 h1{
+    color: var(--very-dark-cyan);
+    margin-bottom: 20px;
+ }
+ body footer .section-4 button{
+    width: 300px;
+    border: none;
+    border-radius: 40px;
+    padding: 20px 0;
+ }
+ body footer .contacts{
+   width: 80%;
+   margin: auto;
+   position: absolute;
+   top: 60%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   
+
+ }
+ body footer .contacts .contact{
+   display: flex;
+   margin-top: 30px;
+   justify-content: space-between;
+   font-family: 'Open Sans', sans-serif;
+ }
+ body footer .contacts .logo{
+   margin-bottom: 20px;
+   margin-left: 20px;
+ }
+ body footer .contacts .logo img{
+   
+   width: 180px;
+
+
+ }
+ body footer .contacts .contact .conta{
+   width: 350px;
+   margin-left: 20px;
+
+ 
+ }
+ body footer .contacts .contact .conta div{
+   width: 100%;
+ }
+ body footer .contacts .contact .conta .location {
+   display: flex;
+  align-items: start;
+  justify-content: center;
+  margin-bottom: 20px;
+ }
+ body footer .contacts .contact .conta .location span{
+   display: inline-block;
+   font-size: 14px;
+   line-height: 20px;
+   font-weight: 400;
+   color: hsl(207, 24%, 82%);
+   margin-left: 20px;
+
+ }
+ body footer .contacts .contact .conta .no{
+   display: flex;
+   align-items: center;
+   justify-content: start;
+   margin-bottom: 20px;
+ }
+ body footer .contacts .contact .conta .no span{
+   display: inline-block;
+   margin-left: 20px;
+   color:  hsl(207, 24%, 82%);
+ }
+ body footer .contacts .contact .conta .email{
+   display: flex;
+   align-items: center;
+   justify-content: start;
+   margin-bottom: 20px;
+ }
+ body footer .contacts .contact .conta .email span{
+   margin-left: 20px;
+   display: inline-block;
+   color:  hsl(207, 24%, 82%);
+ }
+ body footer .contacts .contact ul{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   width: 350px;
+
+ }
+ body footer .contacts .contact ul li{
+   list-style: none;
+   margin-bottom: 20px;
+   transition: 0.9s;
+ }
+ body footer .contacts .contact ul li a{
+   text-decoration: none;
+   color:hsl(207, 24%, 82%) ;
+  
+ }
+ body footer .contacts .contact ul li a:hover{
+   border-bottom: 1px solid hsl(207, 24%, 82%) ;
+ }
+ body footer .contacts .contact .social{
+   width: 170px;
+ }
+ body footer .contacts .contact .social a{
+   text-decoration: none;
+   margin-left: 20px;
+ }
+ body footer .contacts .contact .social a i{
+   font-size: 14px;
+
+   padding: 10px;
+   border-radius: 50%;
+   border: 1px solid hsl(207, 24%, 82%);
+   color: hsl(207, 24%, 82%);
+   transition: 0.6s;
+ }
+ body footer .contacts .contact .social a i:hover{
+   border: 1px solid var(--pink);
+   color: var(--pink);
+ }
+
+ body footer .contacts p{
+   margin-top: 20px;
+   color: hsl(207, 24%, 82%);
+   position: absolute;
+   right: 0;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 12px;
+   margin-bottom: -20px;
+ }
+
+ @media(max-width:950px) and (min-width:550px){
+   body header .container {
+      height: 60vh;
+   }
+   body header .container picture{
+      width: 350px;
+   }
+   body header .container .content h1{
+      font-size: 20px;
+   }
+   body header .container .content p{
+      font-size: 10px;
+   }
+   body header .container .content button{
+      padding: 14px 0;
+      width: 160px;
+      font-size: 10px;
+   }
+   body main{
+     
+      height: 140vh;
+   }
+   body main .sections .sect picture{
+      width:300px ;
+   }
+   body main .sections .sect h2{
+      font-size: 18px;
+   }
+   body main .sections .sect .cont{
+      margin-right: 30px;
+   }
+   body main .sections .sect .cont p{
+      font-size: 12px;
+   }
+   body footer {
+      height: 130vh;
+      width: 100%;
+      
+     
+   }
+
+   body footer .section-4 {
+      width: 500px;
+     z-index: 100;
+  
+   }
+   body footer .section-4 h1{
+      font-size: 20px;
+    
+
+   }
+   body footer .section-4 button{
+      width: 250px;
+      padding: 15px 0;
+      z-index: 11;
+     
+   }
+   body footer .contacts .logo{
+      margin-left: -10px;
+   }
+   body footer .contacts .logo img{
+      width: 140px;
+   }
+   body footer .contacts .contact{
+     display: flex;
+     flex-direction: column;
+   
+ 
+   }
+   body footer .contacts .contact .conta{
+      margin-left: -10px;
+   }
+   body footer .contacts .contact .conta .location img{
+      width: 12px;
+   }
+   body footer .contacts .contact .conta .location span{
+      font-size: 10px;
+      margin-bottom: 10px;
+   }
+   body footer .contacts .contact .conta .no img{
+      width: 13px;
+   }
+   body footer .contacts .contact .conta .no span{
+      font-size: 10px;
+   }
+   body footer .contacts .contact .conta .email img{
+      width: 12px;
+   }
+   body footer .contacts .contact .conta .email span{
+      font-size: 10px;
+   }
+   body footer .contacts .contact ul {
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+   }
+   body footer .contacts ul li{
+      font-size: 13px;
+   }
+   body footer .contacts .contact .social{
+      position: absolute;
+      bottom: -15%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+   }
+   body footer .contacts p{
+      width: 80%;
+      position: absolute;
+      bottom: -20%;
+      left: 60%;
+      transform: translate(-50%,-50%);
+   }
+ }
+ @media (max-width:549px) {
+   body header{
+      height: 110vh;
+   }
+   body header nav img{
+      width: 100px;
+   }
+   body header nav button{
+      padding: 10px 30px;
+   }
+   body header .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }
+   body header .container .content{
+      width: 80%;
+      margin: auto;
+   }
+   body header .container .content h1{
+      font-size: 28px;
+      text-align: center;
+   }
+   body header .container .content p{
+      font-size: 15px;
+      text-align: center;
+   }
+   body header .container .content button{
+      padding: 15px 0 ;
+      width: 220px;
+      margin: 20px 0;
+      margin-left: 50px;
+   }
+   body main{
+      height: 220vh;
+   }
+   body header .container picture{
+      width: 340px;
+   }
+   body main .sections .sect{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 400px;
+      
+
+   }
+   body main .sections .sect .cont h2{
+      text-align: center;
+      font-size: 23px;
+   }
+   body main .sections .sect .cont{
+      width: 350px;
+      margin-left: -6px;
+      margin-bottom: 20px;
+   }
+   body main .sections .sect .cont p{
+      text-align: center;
+      font-size: 12px;
+   }
+   body main .sections .sect picture{
+      width: 200px;
+      margin: 20px 0;
+   }
+   body main .sections .sect .pict{
+      position: absolute;
+      top: 0;
+      
+   }
+   body main .sections .section-1 .cont{
+      position: absolute;
+      bottom: 0;
+   } 
+   body main .sections .section-3 .cont{
+      position: absolute;
+      bottom: 0;
+   } 
+   body footer{
+      height: 140vh;
+   }
+   body footer .section-4{
+      width: 420px;
+   }
+   body footer .section-4 h1{
+      font-size: 22px;
+   }
+   body footer .contact{
+      position: relative;
+   }
+
+   body footer .contact{
+      
+      display: flex;
+      flex-direction: column;
+   }
+   body footer .contacts .contact ul{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+   }
+   body footer .contacts .contact .social{
+      position: absolute;
+      bottom: -15%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+   }
+   body footer .contacts p{
+      width: 80%;
+      position: absolute;
+      bottom: -20%;
+      left: 60%;
+      transform: translate(-50%,-50%);
+   }
+ }
